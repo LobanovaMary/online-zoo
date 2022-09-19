@@ -5,3 +5,10 @@
     width: 100%;
   }
 }
+.header__container {
+  padding: 15px 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 63px;
+}

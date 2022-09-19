@@ -1,4 +1,28 @@
 .header {
   background-color: $color-dark;
-  padding: 15px 220px;
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    gap: 58px;
+    &-link {
+      color: $color-white;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      text-decoration: none;
+    }
+  }
+
+  &__design {
+    color: $color-white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: auto;
+  }
 }
