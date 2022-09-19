@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startMain": "sass pages/main/sass/main.scss pages/main/style.css -w",
+    "startPets": "sass pages/pets/sass/main.scss pages/pets/style.css -w"
   },
-  "author": "",
+  "author": "Lobanova Mary",
   "license": "ISC"
 }
