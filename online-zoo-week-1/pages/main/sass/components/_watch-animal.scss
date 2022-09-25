@@ -3,7 +3,7 @@
   background-size: cover;
 
   &__container {
-    padding: 86px 220px 100px 220px;
+    padding: 86px 0px 100px 0px;
   }
 
   &__content {
@@ -19,8 +19,8 @@
       border-radius: 100%;
       background: $color-bg-orange;
       position: absolute;
-      top: -72px;
-      right: 73px;
+      top: -75px;
+      left: -75px;
     }
   }
   &__text {

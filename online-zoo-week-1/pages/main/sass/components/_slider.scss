@@ -1,0 +1,75 @@
+.slider {
+  width: 1158px;
+  height: 872px;
+  margin-bottom: 80px;
+  position: relative;
+  &__animals {
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 366px);
+  }
+
+  &__card {
+    width: 364px;
+    height: 424px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: $color-bg-grey;
+
+    &-wrapper {
+      width: 366px;
+      height: 426px;
+      border-radius: 5px;
+      background: $color-bg-orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-description {
+      padding-left: 16px;
+      font-family: "Roboto";
+      font-style: normal;
+      position: relative;
+
+      & > h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+      }
+
+      & > p {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+      }
+
+      & > img {
+        position: absolute;
+        top: 1px;
+        right: 15px;
+      }
+    }
+  }
+
+  &__controls > button {
+    position: absolute;
+    top: 403px;
+    width: 62px;
+    height: 62px;
+    background: $color-bg-orange;
+    border-radius: 100%;
+    color: $color-white;
+    border: none;
+  }
+  &-left {
+    left: -82px;
+  }
+  &-right {
+    right: -82px;
+  }
+}

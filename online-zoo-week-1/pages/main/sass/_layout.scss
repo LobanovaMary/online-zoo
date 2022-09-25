@@ -1,14 +1,21 @@
 .container {
-  width: 1600px;
+  width: 1160px;
   margin: auto;
-  @media only screen and (max-width: 1599px) {
-    width: 100%;
-  }
+  // @media screen and (max-width: 1600px) {
+  //   width: 100%;
+  // }
 }
 .header__container {
-  padding: 15px 220px;
+  padding: 15px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 63px;
+}
+.animals-wrapper {
+  background: no-repeat 101% 12px url("../../../assets/flower_foto1.png"),
+    no-repeat -3px 100% url("../../../assets/flower_foto2.png"),
+    no-repeat 101% 100% url("../../../assets/flower_foto3.png"), $color-bg-grey;
+  padding: 140px 0px 100px 0px;
+  // background-image: ;
 }
