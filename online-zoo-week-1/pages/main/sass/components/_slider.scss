@@ -17,13 +17,13 @@
     height: 424px;
     border-radius: 5px;
     overflow: hidden;
-    background: $color-bg-grey;
+    background: $color-white;
 
     &-wrapper {
       width: 366px;
       height: 426px;
       border-radius: 5px;
-      background: $color-bg-orange;
+      background: $color-orange;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -61,7 +61,7 @@
     top: 403px;
     width: 62px;
     height: 62px;
-    background: $color-bg-orange;
+    background: $color-orange;
     border-radius: 100%;
     color: $color-white;
     border: none;

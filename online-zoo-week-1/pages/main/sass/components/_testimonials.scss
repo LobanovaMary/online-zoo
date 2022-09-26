@@ -1,0 +1,108 @@
+.testimonials {
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: $color-grey;
+    margin-bottom: 47px;
+  }
+  &__slider {
+    margin-bottom: 30px;
+
+    &-content {
+      width: 1160px;
+      height: 392px;
+      overflow: hidden;
+      display: flex;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+    &-item {
+      width: 264px;
+      height: 387px;
+      border-radius: 20px;
+      background: $color-white;
+      padding: 15px;
+      overflow: hidden;
+
+      & > p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: $color-grey-light;
+      }
+
+      &-wrapper {
+        width: 268px;
+        height: 391px;
+        border-radius: 20px;
+        background: $color-pink-grad;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    &-img {
+      width: 37px;
+      height: 37px;
+    }
+    &-name {
+      & > h4 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+      }
+      & > p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: $color-grey-light2;
+      }
+    }
+
+    &-progress {
+      width: 597px;
+      height: 6px;
+      border-radius: 5px;
+      background: $color-white;
+      overflow: hidden;
+
+      &-wrapper {
+        margin: auto;
+        width: 599px;
+        height: 8px;
+        border-radius: 5px;
+        background: $color-pink-grad;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &--full {
+        width: 115px;
+        height: 100%;
+        border-radius: 5px;
+        background: $color-title-orange;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
