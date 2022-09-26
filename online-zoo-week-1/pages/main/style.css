@@ -162,7 +162,7 @@ a {
 }
 
 .watch-animal {
-  background-image: url("../../../../assets/Giant_Panda.jpg");
+  background-image: url("./../../assets/Giant_Panda.jpg");
   background-size: cover;
 }
 .watch-animal__container {
