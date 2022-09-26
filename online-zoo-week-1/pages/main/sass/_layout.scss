@@ -18,6 +18,9 @@
     no-repeat 101% 100% url("../../../assets/flower_foto3.png"), $color-white;
   padding: 140px 0px 100px 0px;
 }
+.header {
+  background-color: $color-dark;
+}
 .donate {
   padding: 70px 0px 100px 0px;
   background: $color-orange-grad;

@@ -1,20 +1,4 @@
 .header {
-  background-color: $color-dark;
-
-  &__nav {
-    display: flex;
-    list-style: none;
-    gap: 58px;
-    &-link {
-      color: $color-white;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 140%;
-    }
-  }
-
   &__design {
     color: $color-white;
     font-family: "Roboto";
