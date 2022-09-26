@@ -10,6 +10,13 @@
   line-height: 120%;
   text-align: center;
   padding: 3px 0px 0px 0px;
+  & > h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+  }
   &__sub-title {
     position: relative;
   }

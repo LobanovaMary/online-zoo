@@ -87,6 +87,7 @@ a {
 }
 
 .header__design {
+  display: inline-block;
   color: #ffffff;
   font-family: "Roboto";
   font-style: normal;
@@ -94,6 +95,10 @@ a {
   font-size: 16px;
   line-height: 140%;
   margin-left: auto;
+  transition: all 0.4s;
+}
+.header__design:hover {
+  color: #fe9013;
 }
 
 .navigation {
@@ -114,6 +119,7 @@ a {
   transition: all 0.3s;
 }
 .navigation__link--active {
+  cursor: default;
   color: #fe9013;
 }
 .navigation__link:hover {
@@ -132,6 +138,13 @@ a {
   line-height: 120%;
   text-align: center;
   padding: 3px 0px 0px 0px;
+}
+.logo > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
 }
 .logo__sub-title {
   position: relative;
@@ -240,6 +253,10 @@ a {
   overflow: hidden;
   background: #ffffff;
 }
+.slider__card:hover > img {
+  cursor: pointer;
+  scale: 1.1;
+}
 .slider__card-wrapper {
   width: 366px;
   height: 426px;
@@ -281,6 +298,10 @@ a {
   color: #ffffff;
   border: none;
 }
+.slider__controls > button:hover {
+  cursor: pointer;
+  background: #4b9200;
+}
 .slider-left {
   left: -82px;
 }
@@ -320,6 +341,7 @@ a {
   padding-left: 100px;
 }
 .feed-friend__content--underline {
+  color: #333b41;
   display: inline-block;
   position: relative;
 }

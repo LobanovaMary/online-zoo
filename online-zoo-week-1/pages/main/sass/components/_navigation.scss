@@ -15,6 +15,7 @@
     line-height: 140%;
     transition: all 0.3s;
     &--active {
+      cursor: default;
       color: $color-title-orange;
     }
     &:hover {
