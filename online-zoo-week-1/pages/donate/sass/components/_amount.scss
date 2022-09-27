@@ -1,0 +1,57 @@
+.amount {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  padding-left: 3px;
+  margin-bottom: 17px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__line {
+    width: 100%;
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+    margin-bottom: 98px;
+  }
+
+  &__input {
+    width: 268px;
+    height: 54px;
+    outline: none;
+    background-color: inherit;
+    border: 1px solid #929699;
+    color: #929699;
+    border-radius: 2px;
+    padding: 16px 10px;
+    margin-bottom: 77px;
+  }
+  &__input::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: url(../../../../assets/dollar-icon.svg);
+    background-color: #000000;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333b41;
+    margin-top: 30px;
+  }
+}
