@@ -1,0 +1,42 @@
+.diet {
+  &-container {
+    height: 246px;
+    display: flex;
+    margin: 0px 229px 0px 215px;
+    align-items: center;
+    gap: 10px;
+  }
+  &__count {
+    margin-top: 60px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+    &-num {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 80%;
+      color: $color-dark;
+    }
+    &-p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $color-grey;
+    }
+  }
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 30px;
+    margin-right: 54px;
+  }
+  &__img-panda {
+    width: 284px;
+  }
+}

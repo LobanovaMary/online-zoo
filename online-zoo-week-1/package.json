@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "startMain": "sass pages/main/sass/main.scss pages/main/style.css -w",
-    "startPets": "sass pages/pets/sass/main.scss pages/pets/style.css -w"
+    "startDonate": "sass pages/donate/sass/main.scss pages/donate/style.css -w"
   },
   "author": "Lobanova Mary",
   "license": "ISC"

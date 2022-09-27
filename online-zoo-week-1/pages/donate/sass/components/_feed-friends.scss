@@ -1,0 +1,41 @@
+.panda-bg {
+  height: 385px;
+  background-image: url(../../../assets/panda_bg.jpg);
+  background-size: cover;
+}
+
+.feed-friends {
+  background: $color-orange-grad;
+  &__wrapper {
+    padding: 40px 0px 180px 0px;
+  }
+
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: $color-white;
+    margin-bottom: 10px;
+  }
+  &__content {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-white;
+    margin-bottom: 45px;
+  }
+
+  &__sub-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: $color-title-orange;
+    margin-bottom: 60px;
+  }
+}
