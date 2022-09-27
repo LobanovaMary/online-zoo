@@ -18,6 +18,8 @@
     &:hover > p {
       cursor: pointer;
       color: #4b9200;
+      text-decoration: underline;
+      text-decoration-color: #4b9200;
     }
   }
   &__design > p {
