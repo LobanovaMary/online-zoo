@@ -300,6 +300,87 @@ a {
   background: #404950;
   border-radius: 2px;
   margin-bottom: 98px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 105px;
+  padding: 0px 20px;
+}
+.amount__line::after {
+  content: "";
+  position: absolute;
+  background: #72828e;
+  width: 915px;
+  height: 2px;
+  left: 30px;
+}
+.amount__count-wrapper {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.amount__count-wrapper:hover > label {
+  color: #fe9013;
+  cursor: pointer;
+}
+.amount__count-wrapper:hover > label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: #fe9013 2px solid;
+  border-radius: 100%;
+  top: -38px;
+  left: 21px;
+}
+.amount__count-wrapper > label {
+  position: absolute;
+  width: 100px;
+  bottom: -50px;
+  left: -20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  color: #333b41;
+  line-height: 140%;
+  transition: all 0.2s;
+}
+.amount__count-radio {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #ffee2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.amount__count-radio:checked ~ label {
+  color: #fe9013;
+}
+.amount__count-radio:checked ~ label::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: #fe9013 2px solid;
+  top: -47px;
+  left: 12px;
+  border-radius: 100%;
+}
+.amount__count-radio:checked ~ label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: #fe9013 2px solid;
+  border-radius: 100%;
+  top: -38px;
+  left: 21px;
 }
 .amount__input {
   width: 268px;
@@ -310,14 +391,29 @@ a {
   color: #929699;
   border-radius: 2px;
   padding: 16px 10px;
-  margin-bottom: 77px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }
-.amount__input::after {
+.amount__input::-webkit-outer-spin-button, .amount__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.amount__input[type=number] {
+  -moz-appearance: textfield;
+}
+.amount__input-wrapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+.amount__input-wrapper::after {
   content: "";
   position: absolute;
-  top: 0;
-  background-image: url(../../../../assets/dollar-icon.svg);
-  background-color: #000000;
+  top: 12px;
+  right: 0px;
+  background: no-repeat center url(../../../../assets/dollar-icon.svg);
   width: 30px;
   height: 30px;
 }
@@ -329,6 +425,46 @@ a {
   line-height: 140%;
   color: #333b41;
   margin-top: 30px;
+}
+.amount__time {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.amount__time > label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+}
+.amount__time > label:hover {
+  cursor: pointer;
+}
+.amount__time > label:not(:last-child) {
+  margin-right: 50px;
+}
+.amount__time > label:last-child {
+  margin-right: 10px;
+}
+.amount__time-radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 1px solid #fe9013;
+  background-color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+}
+.amount__time-radio:hover {
+  cursor: pointer;
+}
+.amount__time-radio:checked {
+  background: #4b9200;
+  border: 1px solid #4b9200;
 }
 
 .footer__wrapper {
