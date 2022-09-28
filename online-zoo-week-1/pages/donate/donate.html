@@ -96,7 +96,8 @@
           </div>
           <div class="amount__form">
             <div class="amount__input-wrapper">
-              <input class="amount__input" type="number" maxlength="4" placeholder="Another amount">
+              <input class="amount__input" type="number" maxlength="4" placeholder="Another amount"
+                oninput="if(this.value.length > 4) this.value = this.value.slice(0, this.maxLength);">
             </div>
             <div class="amount__time">
               <input class="amount__time-radio" type="radio" id="Monthly" name="amount__time">
