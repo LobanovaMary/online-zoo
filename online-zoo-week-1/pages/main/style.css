@@ -33,7 +33,7 @@ a {
 }
 
 .animals-wrapper {
-  background: no-repeat 101% 12px url("../../../assets/flower_foto1.png"), no-repeat -3px 100% url("../../../assets/flower_foto2.png"), no-repeat 101% 100% url("../../../assets/flower_foto3.png"), #ffffff;
+  background: no-repeat 101% 12px url("../../assets/flower_foto1.png"), no-repeat -3px 100% url("../../assets/flower_foto2.png"), no-repeat 101% 100% url("../../assets/flower_foto3.png"), #ffffff;
   padding: 140px 0px 100px 0px;
 }
 
