@@ -534,9 +534,6 @@ a {
   color: #d31414;
   border: 1px solid #d31414;
 }
-.contact__email:valid {
-  border: 1px solid #4b9200;
-}
 .contact__email:invalid ~ .contact__btn-submit {
   color: #d31414;
   border: 1px solid #d31414;
