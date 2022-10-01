@@ -23,18 +23,33 @@ a {
   width: 1160px;
   margin: auto;
 }
+@media screen and (max-width: 1490px) {
+  .container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
 
 .header__container {
-  padding: 15px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 63px;
 }
+@media screen and (max-width: 1490px) {
+  .header__container {
+    padding: 15px 30px;
+  }
+}
 
 .animals-wrapper {
   background: no-repeat 101% 12px url("./../../assets/flower_foto1.png"), no-repeat -3px 100% url("./../../assets/flower_foto2.png"), no-repeat 101% 100% url("./../../assets/flower_foto3.png"), #ffffff;
   padding: 140px 0px 100px 0px;
+}
+@media screen and (max-width: 1490px) {
+  .animals-wrapper {
+    background: no-repeat -3px 100% url("./../../assets/flower_foto2-1000.png"), no-repeat 101% 100% url("./../../assets/flower_foto3-1000px.png"), #ffffff;
+  }
 }
 
 .header {
@@ -86,6 +101,10 @@ a {
   background: #4b9200;
 }
 
+.header {
+  position: relative;
+  z-index: 2;
+}
 .header__design {
   display: inline-block;
   color: #ffffff;
@@ -105,6 +124,11 @@ a {
   display: flex;
   list-style: none;
   gap: 58px;
+}
+@media screen and (max-width: 1490px) {
+  .navigation {
+    gap: 48px;
+  }
 }
 .navigation__footer {
   margin-left: 120px;
@@ -175,6 +199,11 @@ a {
 .watch-animal__container {
   padding: 86px 0px 100px 0px;
 }
+@media screen and (max-width: 1490px) {
+  .watch-animal__container {
+    padding: 42px 37px 47px 0px;
+  }
+}
 .watch-animal__content {
   width: 500px;
   position: relative;
@@ -190,6 +219,14 @@ a {
   top: -75px;
   left: -75px;
 }
+@media screen and (max-width: 1490px) {
+  .watch-animal__content::after {
+    width: 367px;
+    height: 367px;
+    top: -55px;
+    left: -5px;
+  }
+}
 .watch-animal__text {
   position: relative;
   font-family: "Roboto";
@@ -203,8 +240,18 @@ a {
   z-index: 2;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 1490px) {
+  .watch-animal__text {
+    margin-bottom: 40px;
+  }
+}
 .watch-animal__text > span {
   color: #ffee2e;
+}
+@media screen and (max-width: 1490px) {
+  .watch-animal__text {
+    font-size: 85px;
+  }
 }
 
 .backstage {
@@ -244,6 +291,11 @@ a {
   height: 872px;
   margin-bottom: 80px;
   position: relative;
+}
+@media screen and (max-width: 1490px) {
+  .slider {
+    width: 100%;
+  }
 }
 .slider__animals {
   height: 100%;

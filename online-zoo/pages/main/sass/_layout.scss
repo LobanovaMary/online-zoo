@@ -1,22 +1,30 @@
 .container {
   width: 1160px;
   margin: auto;
-  // @media screen and (max-width: 1600px) {
-  //   width: 100%;
-  // }
+  @media screen and (max-width: 1490px) {
+    width: 100%;
+    padding: 0px 30px;
+  }
 }
 .header__container {
-  padding: 15px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 63px;
+  @media screen and (max-width: 1490px) {
+    padding: 15px 30px;
+  }
 }
 .animals-wrapper {
   background: no-repeat 101% 12px url("./../../assets/flower_foto1.png"),
     no-repeat -3px 100% url("./../../assets/flower_foto2.png"),
     no-repeat 101% 100% url("./../../assets/flower_foto3.png"), $color-white;
   padding: 140px 0px 100px 0px;
+  @media screen and (max-width: 1490px) {
+    background: no-repeat -3px 100% url("./../../assets/flower_foto2-1000.png"),
+      no-repeat 101% 100% url("./../../assets/flower_foto3-1000px.png"),
+      $color-white;
+  }
 }
 .header {
   background-color: $color-dark;

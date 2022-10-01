@@ -4,11 +4,13 @@
 
   &__container {
     padding: 86px 0px 100px 0px;
+    @media screen and (max-width: 1490px) {
+      padding: 42px 37px 47px 0px;
+    }
   }
 
   &__content {
     width: 500px;
-
     position: relative;
     margin-left: auto;
 
@@ -21,6 +23,12 @@
       position: absolute;
       top: -75px;
       left: -75px;
+      @media screen and (max-width: 1490px) {
+        width: 367px;
+        height: 367px;
+        top: -55px;
+        left: -5px;
+      }
     }
   }
   &__text {
@@ -35,9 +43,16 @@
     color: $color-white;
     z-index: 2;
     margin-bottom: 60px;
+    @media screen and (max-width: 1490px) {
+      margin-bottom: 40px;
+    }
 
     & > span {
       color: $color-yellow;
+    }
+
+    @media screen and (max-width: 1490px) {
+      font-size: 85px;
     }
   }
 }

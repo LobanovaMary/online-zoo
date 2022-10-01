@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 2;
   &__design {
     display: inline-block;
     color: $color-white;
