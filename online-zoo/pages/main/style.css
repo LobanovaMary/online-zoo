@@ -61,6 +61,11 @@ a {
   padding: 70px 0px 100px 0px;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
 }
+@media screen and (max-width: 1490px) {
+  .donate {
+    padding: 30px 30px 50px 30px;
+  }
+}
 
 .testimonials {
   padding: 140px 0px 180px 0px;
@@ -332,8 +337,10 @@ a {
 }
 @media screen and (max-width: 1490px) {
   .slider {
-    width: 100%;
+    width: 940px;
     margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .slider__animals {
@@ -489,6 +496,11 @@ a {
   font-family: "Roboto";
   font-style: normal;
 }
+@media only screen and (max-width: 1490px) {
+  .feed-friend {
+    padding: 29px 0px 50px 0px;
+  }
+}
 .feed-friend__title {
   color: #fe9013;
   font-weight: 400;
@@ -496,6 +508,11 @@ a {
   line-height: 120%;
   text-align: center;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 1490px) {
+  .feed-friend__title {
+    margin-bottom: 20px;
+  }
 }
 .feed-friend__sub-title {
   font-weight: 400;
@@ -505,12 +522,32 @@ a {
   margin-bottom: 40px;
   padding-left: 100px;
 }
+@media only screen and (max-width: 1490px) {
+  .feed-friend__sub-title {
+    padding-left: 50px;
+    margin-bottom: 20px;
+  }
+}
 .feed-friend__content {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
   color: #333b41;
   padding-left: 100px;
+}
+@media only screen and (max-width: 1490px) {
+  .feed-friend__content {
+    padding-left: 50px;
+    padding-right: 83px;
+  }
+}
+.feed-friend__content--right {
+  padding-right: 190px;
+}
+@media only screen and (max-width: 1490px) {
+  .feed-friend__content--right {
+    padding-right: 83px;
+  }
 }
 .feed-friend__content--underline {
   color: #333b41;
@@ -536,6 +573,11 @@ a {
   font-family: "Roboto";
   font-style: normal;
   color: #333b41;
+}
+@media only screen and (max-width: 1490px) {
+  .payment {
+    padding: 40px 88px 73px 88px;
+  }
 }
 .payment__title {
   font-weight: 400;

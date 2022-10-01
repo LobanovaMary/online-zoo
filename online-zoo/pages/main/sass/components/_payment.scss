@@ -3,6 +3,9 @@
   font-family: "Roboto";
   font-style: normal;
   color: $color-grey;
+  @media only screen and (max-width: 1490px) {
+    padding: 40px 88px 73px 88px;
+  }
 
   &__title {
     font-weight: 400;
