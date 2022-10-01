@@ -5,6 +5,7 @@
   position: relative;
   @media screen and (max-width: 1490px) {
     width: 100%;
+    margin-bottom: 8px;
   }
   &__animals {
     height: 100%;
@@ -14,6 +15,10 @@
     column-gap: 30px;
     grid-template-columns: repeat(4, 366px);
     padding-bottom: 80px;
+    @media screen and (max-width: 1490px) {
+      grid-template-columns: repeat(4, 293px);
+      row-gap: 150px;
+    }
   }
 
   &__card {
@@ -22,6 +27,14 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 1490px) {
+      width: 291px;
+      height: 291px;
+      & > img {
+        width: 291px;
+        height: 293px;
+      }
+    }
 
     &:hover > img {
       cursor: pointer;
@@ -51,6 +64,10 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      @media screen and (max-width: 1490px) {
+        width: 293px;
+        height: 295px;
+      }
     }
 
     &-hidden {
@@ -111,6 +128,9 @@
     border-radius: 100%;
     color: $color-white;
     border: none;
+    @media screen and (max-width: 1490px) {
+      top: 368px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -119,8 +139,14 @@
   }
   &-left {
     left: -82px;
+    @media screen and (max-width: 1490px) {
+      left: 323px;
+    }
   }
   &-right {
     right: -82px;
+    @media screen and (max-width: 1490px) {
+      right: 323px;
+    }
   }
 }

@@ -48,7 +48,7 @@ a {
 }
 @media screen and (max-width: 1490px) {
   .animals-wrapper {
-    background: no-repeat -3px 100% url("./../../assets/flower_foto2-1000.png"), no-repeat 101% 100% url("./../../assets/flower_foto3-1000px.png"), #ffffff;
+    background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"), no-repeat 100% 100% url("./../../assets/flower_foto3-1000.png"), #ffffff;
     padding: 104px 0px 140px 0px;
   }
 }
@@ -333,6 +333,7 @@ a {
 @media screen and (max-width: 1490px) {
   .slider {
     width: 100%;
+    margin-bottom: 8px;
   }
 }
 .slider__animals {
@@ -344,12 +345,28 @@ a {
   grid-template-columns: repeat(4, 366px);
   padding-bottom: 80px;
 }
+@media screen and (max-width: 1490px) {
+  .slider__animals {
+    grid-template-columns: repeat(4, 293px);
+    row-gap: 150px;
+  }
+}
 .slider__card {
   width: 364px;
   height: 364px;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 1490px) {
+  .slider__card {
+    width: 291px;
+    height: 291px;
+  }
+  .slider__card > img {
+    width: 291px;
+    height: 293px;
+  }
 }
 .slider__card:hover > img {
   cursor: pointer;
@@ -378,6 +395,12 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+@media screen and (max-width: 1490px) {
+  .slider__card-wrapper {
+    width: 293px;
+    height: 295px;
+  }
 }
 .slider__card-hidden {
   position: absolute;
@@ -432,6 +455,11 @@ a {
   color: #ffffff;
   border: none;
 }
+@media screen and (max-width: 1490px) {
+  .slider__controls > button {
+    top: 368px;
+  }
+}
 .slider__controls > button:hover {
   cursor: pointer;
   background: #4b9200;
@@ -439,8 +467,18 @@ a {
 .slider-left {
   left: -82px;
 }
+@media screen and (max-width: 1490px) {
+  .slider-left {
+    left: 323px;
+  }
+}
 .slider-right {
   right: -82px;
+}
+@media screen and (max-width: 1490px) {
+  .slider-right {
+    right: 323px;
+  }
 }
 
 .feed-friend {
