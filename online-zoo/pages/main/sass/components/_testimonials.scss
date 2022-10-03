@@ -23,11 +23,14 @@
       height: 392px;
       overflow: hidden;
       display: grid;
-      grid-template-columns: repeat(4, 293px);
+      grid-template-columns: repeat(4, 264px);
       gap: 30px;
       margin-bottom: 20px;
       @media screen and (max-width: 1490px) {
         width: 940px;
+        grid-template-columns: repeat(4, 293px);
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     &-item {

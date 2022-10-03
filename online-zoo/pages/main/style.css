@@ -145,6 +145,11 @@ a {
 .navigation__footer {
   margin-left: 120px;
 }
+@media screen and (max-width: 1490px) {
+  .navigation__footer {
+    margin-left: 90px;
+  }
+}
 .navigation__link {
   color: #ffffff;
   font-family: "Roboto";
@@ -276,6 +281,7 @@ a {
   .backstage {
     gap: 30px;
     margin-bottom: 140px;
+    justify-content: center;
   }
 }
 .backstage__img {
@@ -653,13 +659,16 @@ a {
   height: 392px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(4, 293px);
+  grid-template-columns: repeat(4, 264px);
   gap: 30px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 1490px) {
   .testimonials__slider-content {
     width: 940px;
+    grid-template-columns: repeat(4, 293px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .testimonials__slider-item {
@@ -797,6 +806,11 @@ a {
   transition: all 0.4s;
 }
 
+@media screen and (max-width: 1490px) {
+  .contact {
+    margin-right: 32px;
+  }
+}
 .contact__title {
   font-family: "Roboto";
   font-style: normal;
@@ -821,6 +835,11 @@ a {
   color: #bdbdbd;
   border-radius: 5px;
   margin-right: 5px;
+}
+@media screen and (max-width: 1490px) {
+  .contact__email {
+    border-radius: 2px;
+  }
 }
 .contact__email:active {
   border: 1px solid #4b9200;

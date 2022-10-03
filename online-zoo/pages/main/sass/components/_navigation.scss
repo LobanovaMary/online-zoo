@@ -9,6 +9,9 @@
 
   &__footer {
     margin-left: 120px;
+    @media screen and (max-width: 1490px) {
+      margin-left: 90px;
+    }
   }
 
   &__link {
