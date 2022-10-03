@@ -42,6 +42,11 @@
   padding: 140px 0px 180px 0px;
   background: no-repeat 101% 644px url("./../../assets/flower_foto4.png"),
     $color-white;
+  @media only screen and (max-width: 1490px) {
+    padding: 100px 0px 140px 0px;
+    background: no-repeat 100% 605px url("./../../assets/flower_foto4-1000.png"),
+      $color-white;
+  }
 }
 .footer {
   padding: 40px 0px 50px 0px;

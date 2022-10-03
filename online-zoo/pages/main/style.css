@@ -71,6 +71,12 @@ a {
   padding: 140px 0px 180px 0px;
   background: no-repeat 101% 644px url("./../../assets/flower_foto4.png"), #ffffff;
 }
+@media only screen and (max-width: 1490px) {
+  .testimonials {
+    padding: 100px 0px 140px 0px;
+    background: no-repeat 100% 605px url("./../../assets/flower_foto4-1000.png"), #ffffff;
+  }
+}
 
 .footer {
   padding: 40px 0px 50px 0px;
@@ -629,16 +635,32 @@ a {
   color: #333b41;
   margin-bottom: 47px;
 }
+@media screen and (max-width: 1490px) {
+  .testimonials__title {
+    margin-bottom: 30px;
+  }
+}
 .testimonials__slider {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1490px) {
+  .testimonials__slider {
+    margin-bottom: 52px;
+  }
 }
 .testimonials__slider-content {
   width: 1160px;
   height: 392px;
   overflow: hidden;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 293px);
   gap: 30px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-content {
+    width: 940px;
+  }
 }
 .testimonials__slider-item {
   width: 264px;
@@ -647,6 +669,12 @@ a {
   background: #ffffff;
   padding: 15px;
   overflow: hidden;
+}
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-item {
+    width: 289px;
+    height: 387px;
+  }
 }
 .testimonials__slider-item > p {
   font-family: "Roboto";
@@ -664,6 +692,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-item-wrapper {
+    width: 293px;
+    height: 391px;
+  }
 }
 .testimonials__slider-title {
   display: flex;
@@ -696,6 +730,11 @@ a {
   background: #ffffff;
   overflow: hidden;
 }
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-progress {
+    width: 391px;
+  }
+}
 .testimonials__slider-progress-wrapper {
   margin: auto;
   width: 599px;
@@ -706,11 +745,21 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-progress-wrapper {
+    width: 395px;
+  }
+}
 .testimonials__slider-progress--full {
   width: 115px;
   height: 100%;
   border-radius: 5px;
   background: #fe9013;
+}
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-progress--full {
+    width: 75px;
+  }
 }
 .testimonials__slider-progress:hover {
   cursor: pointer;

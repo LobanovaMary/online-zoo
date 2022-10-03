@@ -8,17 +8,27 @@
     text-align: center;
     color: $color-grey;
     margin-bottom: 47px;
+    @media screen and (max-width: 1490px) {
+      margin-bottom: 30px;
+    }
   }
   &__slider {
     margin-bottom: 30px;
+    @media screen and (max-width: 1490px) {
+      margin-bottom: 52px;
+    }
 
     &-content {
       width: 1160px;
       height: 392px;
       overflow: hidden;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, 293px);
       gap: 30px;
       margin-bottom: 20px;
+      @media screen and (max-width: 1490px) {
+        width: 940px;
+      }
     }
     &-item {
       width: 264px;
@@ -27,6 +37,10 @@
       background: $color-white;
       padding: 15px;
       overflow: hidden;
+      @media screen and (max-width: 1490px) {
+        width: 289px;
+        height: 387px;
+      }
 
       & > p {
         font-family: "Roboto";
@@ -45,6 +59,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 1490px) {
+          width: 293px;
+          height: 391px;
+        }
       }
     }
 
@@ -81,6 +100,9 @@
       border-radius: 5px;
       background: $color-white;
       overflow: hidden;
+      @media screen and (max-width: 1490px) {
+        width: 391px;
+      }
 
       &-wrapper {
         margin: auto;
@@ -91,6 +113,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 1490px) {
+          width: 395px;
+        }
       }
 
       &--full {
@@ -98,6 +123,9 @@
         height: 100%;
         border-radius: 5px;
         background: $color-title-orange;
+        @media screen and (max-width: 1490px) {
+          width: 75px;
+        }
       }
 
       &:hover {
