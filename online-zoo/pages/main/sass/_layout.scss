@@ -1,18 +1,25 @@
 .container {
   width: 1160px;
   margin: auto;
-  @media screen and (max-width: 1490px) {
+  @media only screen and (max-width: 1490px) {
     width: 100%;
     padding: 0px 30px;
+  }
+  @media only screen and (max-width: 980px) {
+    padding: 0px 20px;
   }
 }
 .header__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 63px;
-  @media screen and (max-width: 1490px) {
+  padding: 15px 0px;
+  @media only screen and (max-width: 1490px) {
     padding: 15px 30px;
+  }
+  @media only screen and (max-width: 980px) {
+    padding: 2px 20px;
   }
 }
 .animals-wrapper {
@@ -20,7 +27,7 @@
     no-repeat -3px 100% url("./../../assets/flower_foto2.png"),
     no-repeat 101% 100% url("./../../assets/flower_foto3.png"), $color-white;
   padding: 140px 0px 100px 0px;
-  @media screen and (max-width: 1490px) {
+  @media only screen and (max-width: 1490px) {
     background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"),
       no-repeat 100% 100% url("./../../assets/flower_foto3-1000.png"),
       $color-white;
@@ -34,7 +41,7 @@
 .donate {
   padding: 70px 0px 100px 0px;
   background: $color-orange-grad;
-  @media screen and (max-width: 1490px) {
+  @media only screen and (max-width: 1490px) {
     padding: 30px 30px 50px 30px;
   }
 }

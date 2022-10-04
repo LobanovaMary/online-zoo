@@ -3,13 +3,13 @@
   list-style: none;
   gap: 58px;
 
-  @media screen and (max-width: 1490px) {
+  @media only screen and (max-width: 1490px) {
     gap: 48px;
   }
 
   &__footer {
     margin-left: 120px;
-    @media screen and (max-width: 1490px) {
+    @media only screen and (max-width: 1490px) {
       margin-left: 90px;
     }
   }

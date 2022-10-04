@@ -16,3 +16,17 @@
     color: $color-title-orange;
   }
 }
+.burger {
+  display: none;
+  @media only screen and (max-width: 980px) {
+    display: block;
+    width: 18px;
+    height: 10px;
+    background-image: url(./../../../../assets/burger-icon.svg);
+  }
+}
+.header__hidden {
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
+}
