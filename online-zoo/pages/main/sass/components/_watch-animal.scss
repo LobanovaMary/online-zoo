@@ -40,6 +40,12 @@
         top: -30px;
         left: 310px;
       }
+      @media only screen and (max-width: 639px) {
+        width: 119.09px;
+        height: 119.09px;
+        top: -20px;
+        left: 140px;
+      }
     }
   }
   &__text {
@@ -60,13 +66,16 @@
     }
     @media screen and (max-width: 999px) {
       font-size: 54.2894px;
-      line-height: 75%;
       width: 255.64px;
       margin-bottom: 0px;
       margin-left: 368px;
     }
     @media screen and (max-width: 670px) {
       margin-left: auto;
+    }
+    @media only screen and (max-width: 639px) {
+      font-size: 28px;
+      width: 128.13px;
     }
 
     & > span {
@@ -78,6 +87,11 @@
     @media screen and (max-width: 999px) {
       margin-right: auto;
       margin-left: 0px;
+    }
+    @media only screen and (max-width: 639px) {
+      position: absolute;
+      left: -10px;
+      top: 165px;
     }
   }
 }
