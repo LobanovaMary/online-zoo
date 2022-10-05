@@ -63,6 +63,12 @@ a {
     padding: 104px 0px 140px 0px;
   }
 }
+@media only screen and (max-width: 999px) {
+  .animals-wrapper {
+    background: no-repeat 100% 0px url("./../../assets/flower_foto1-640.png"), no-repeat -3px 100% url("./../../assets/flower_foto2-640.png"), no-repeat 101% 100% url("./../../assets/flower_foto3-640.png"), #ffffff;
+    padding: 58px 0px 100px 0px;
+  }
+}
 
 .header {
   background-color: #000000;
@@ -317,7 +323,7 @@ a {
 }
 @media screen and (max-width: 999px) {
   .watch-animal__container {
-    padding: 50px 14px 40px 20px;
+    padding: 43px 14px 40px 20px;
   }
 }
 .watch-animal__content {
@@ -352,8 +358,8 @@ a {
   .watch-animal__content::after {
     width: 237.6px;
     height: 237.6px;
-    top: -40px;
-    left: 330px;
+    top: -30px;
+    left: 310px;
   }
 }
 .watch-animal__text {
@@ -412,6 +418,12 @@ a {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 999px) {
+  .backstage {
+    justify-content: start;
+    margin-bottom: 80px;
+  }
+}
 .backstage__img {
   width: 609px;
   height: 403px;
@@ -429,6 +441,11 @@ a {
     display: block;
   }
 }
+@media only screen and (max-width: 999px) {
+  .backstage__img {
+    display: none;
+  }
+}
 .backstage__content {
   font-family: "Roboto";
   font-style: normal;
@@ -438,6 +455,11 @@ a {
 @media screen and (max-width: 1490px) {
   .backstage__content {
     width: 454px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .backstage__content {
+    width: 494px;
   }
 }
 .backstage__content > h2 {
@@ -459,6 +481,7 @@ a {
 }
 .backstage__content > h3 {
   font-size: 24px;
+  font-weight: 400;
   line-height: 120%;
   margin-top: 54px;
   margin-bottom: 34px;
@@ -466,6 +489,12 @@ a {
 @media screen and (max-width: 1490px) {
   .backstage__content > h3 {
     margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .backstage__content > h3 {
+    margin-top: 28px;
+    margin-bottom: 20px;
   }
 }
 

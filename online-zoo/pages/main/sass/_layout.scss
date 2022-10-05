@@ -33,6 +33,13 @@
       $color-white;
     padding: 104px 0px 140px 0px;
   }
+  @media only screen and (max-width: 999px) {
+    background: no-repeat 100% 0px url("./../../assets/flower_foto1-640.png"),
+      no-repeat -3px 100% url("./../../assets/flower_foto2-640.png"),
+      no-repeat 101% 100% url("./../../assets/flower_foto3-640.png"),
+      $color-white;
+    padding: 58px 0px 100px 0px;
+  }
 }
 .header {
   background-color: $color-dark;

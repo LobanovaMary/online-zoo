@@ -8,6 +8,10 @@
     margin-bottom: 140px;
     justify-content: center;
   }
+  @media only screen and (max-width: 999px) {
+    justify-content: start;
+    margin-bottom: 80px;
+  }
 
   &__img {
     width: 609px;
@@ -23,6 +27,9 @@
         display: block;
       }
     }
+    @media only screen and (max-width: 999px) {
+      display: none;
+    }
   }
 
   &__content {
@@ -32,6 +39,9 @@
     color: $color-grey;
     @media screen and (max-width: 1490px) {
       width: 454px;
+    }
+    @media only screen and (max-width: 999px) {
+      width: 494px;
     }
   }
   &__content > h2 {
@@ -52,11 +62,16 @@
 
   &__content > h3 {
     font-size: 24px;
+    font-weight: 400;
     line-height: 120%;
     margin-top: 54px;
     margin-bottom: 34px;
     @media screen and (max-width: 1490px) {
       margin-top: 50px;
+    }
+    @media only screen and (max-width: 999px) {
+      margin-top: 28px;
+      margin-bottom: 20px;
     }
   }
 }
