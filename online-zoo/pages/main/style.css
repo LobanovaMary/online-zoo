@@ -99,6 +99,12 @@ a {
     background: no-repeat 100% 605px url("./../../assets/flower_foto4-1000.png"), #ffffff;
   }
 }
+@media only screen and (max-width: 999px) {
+  .testimonials {
+    padding: 60px 0px 80px 0px;
+    background: no-repeat 100% 533px url("./../../assets/flower_foto4-640.png"), #ffffff;
+  }
+}
 
 .footer {
   padding: 40px 0px 50px 0px;
@@ -162,7 +168,7 @@ a {
     display: block;
     width: 18px;
     height: 10px;
-    background-image: url(./../../../../assets/burger-icon.svg);
+    background-image: url(./../../assets/burger-icon.svg);
   }
 }
 .burger:hover {
@@ -959,6 +965,11 @@ a {
     margin-bottom: 52px;
   }
 }
+@media screen and (max-width: 999px) {
+  .testimonials__slider {
+    margin-bottom: 40px;
+  }
+}
 .testimonials__slider-content {
   width: 1160px;
   height: 392px;
@@ -977,6 +988,15 @@ a {
     padding: 0px;
   }
 }
+@media screen and (max-width: 999px) {
+  .testimonials__slider-content {
+    width: 600px;
+    height: 360px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 109px);
+    row-gap: 15px;
+  }
+}
 .testimonials__slider-item {
   width: 264px;
   height: 387px;
@@ -989,6 +1009,12 @@ a {
   .testimonials__slider-item {
     width: 289px;
     height: 387px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .testimonials__slider-item {
+    height: 106px;
+    width: 596px;
   }
 }
 .testimonials__slider-item > p {
@@ -1012,6 +1038,12 @@ a {
   .testimonials__slider-item-wrapper {
     width: 293px;
     height: 391px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .testimonials__slider-item-wrapper {
+    height: 109px;
+    width: 600px;
   }
 }
 .testimonials__slider-title {
@@ -1065,6 +1097,11 @@ a {
     width: 395px;
   }
 }
+@media screen and (max-width: 999px) {
+  .testimonials__slider-progress-wrapper {
+    display: none;
+  }
+}
 .testimonials__slider-progress--full {
   width: 115px;
   height: 100%;
@@ -1078,6 +1115,13 @@ a {
 }
 .testimonials__slider-progress:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 990px) {
+  .testimonials__btn {
+    width: 240px;
+    margin-left: 180px;
+    display: block;
+  }
 }
 
 .footer__wrapper {
