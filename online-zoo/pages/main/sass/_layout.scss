@@ -2,10 +2,11 @@
   width: 1160px;
   margin: auto;
   @media only screen and (max-width: 1490px) {
-    width: 100%;
+    width: 1000px;
     padding: 0px 30px;
   }
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 998px) {
+    width: 640px;
     padding: 0px 20px;
   }
 }
@@ -18,7 +19,7 @@
   @media only screen and (max-width: 1490px) {
     padding: 15px 30px;
   }
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 998px) {
     padding: 2px 20px;
   }
 }
@@ -29,7 +30,7 @@
   padding: 140px 0px 100px 0px;
   @media only screen and (max-width: 1490px) {
     background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"),
-      no-repeat 100% 100% url("./../../assets/flower_foto3-1000.png"),
+      no-repeat 102% 100% url("./../../assets/flower_foto3-1000.png"),
       $color-white;
     padding: 104px 0px 140px 0px;
   }
@@ -42,7 +43,7 @@
   padding: 70px 0px 100px 0px;
   background: $color-orange-grad;
   @media only screen and (max-width: 1490px) {
-    padding: 30px 30px 50px 30px;
+    padding: 30px 0px 50px 0px;
   }
 }
 .testimonials {

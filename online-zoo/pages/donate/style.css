@@ -13,6 +13,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -23,18 +24,46 @@ a {
   width: 1160px;
   margin: auto;
 }
+@media only screen and (max-width: 1490px) {
+  .container {
+    width: 1000px;
+    padding: 0px 30px;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .container {
+    width: 640px;
+    padding: 0px 20px;
+  }
+}
 
 .header__container {
-  padding: 15px 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 63px;
+  padding: 15px 0px;
+}
+@media only screen and (max-width: 1490px) {
+  .header__container {
+    padding: 15px 30px;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .header__container {
+    padding: 2px 20px;
+  }
 }
 
 .animals-wrapper {
   background: no-repeat 101% 12px url("./../../assets/flower_foto1.png"), no-repeat -3px 100% url("./../../assets/flower_foto2.png"), no-repeat 101% 100% url("./../../assets/flower_foto3.png"), #ffffff;
   padding: 140px 0px 100px 0px;
+}
+@media only screen and (max-width: 1490px) {
+  .animals-wrapper {
+    background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"), no-repeat 102% 100% url("./../../assets/flower_foto3-1000.png"), #ffffff;
+    padding: 104px 0px 140px 0px;
+  }
 }
 
 .header {
@@ -45,10 +74,21 @@ a {
   padding: 70px 0px 100px 0px;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
 }
+@media only screen and (max-width: 1490px) {
+  .donate {
+    padding: 30px 0px 50px 0px;
+  }
+}
 
 .testimonials {
   padding: 140px 0px 180px 0px;
   background: no-repeat 101% 644px url("./../../assets/flower_foto4.png"), #ffffff;
+}
+@media only screen and (max-width: 1490px) {
+  .testimonials {
+    padding: 100px 0px 140px 0px;
+    background: no-repeat 100% 605px url("./../../assets/flower_foto4-1000.png"), #ffffff;
+  }
 }
 
 .footer {
@@ -86,6 +126,10 @@ a {
   background: #4b9200;
 }
 
+.header {
+  position: relative;
+  z-index: 2;
+}
 .header__design {
   display: inline-block;
   color: #ffffff;
@@ -101,13 +145,44 @@ a {
   color: #fe9013;
 }
 
+.burger {
+  display: none;
+}
+@media only screen and (max-width: 999px) {
+  .burger {
+    display: block;
+    width: 18px;
+    height: 10px;
+    background-image: url(./../../../../assets/burger-icon.svg);
+  }
+}
+.burger:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 999px) {
+  .header__hidden {
+    display: none;
+  }
+}
+
 .navigation {
   display: flex;
   list-style: none;
   gap: 58px;
 }
+@media only screen and (max-width: 1490px) {
+  .navigation {
+    gap: 48px;
+  }
+}
 .navigation__footer {
   margin-left: 120px;
+}
+@media only screen and (max-width: 1490px) {
+  .navigation__footer {
+    margin-left: 90px;
+  }
 }
 .navigation__link {
   color: #ffffff;
@@ -139,12 +214,28 @@ a {
   text-align: center;
   padding: 3px 0px 0px 0px;
 }
+@media only screen and (max-width: 999px) {
+  .logo {
+    width: 46.86px;
+    height: 29.03px;
+    border: none;
+    padding: 0px;
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+}
 .logo > h1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 120%;
+}
+@media only screen and (max-width: 999px) {
+  .logo > h1 {
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
 }
 .logo__sub-title {
   font-family: "Roboto";
@@ -156,7 +247,53 @@ a {
   position: relative;
   display: inline-block;
 }
+@media only screen and (max-width: 999px) {
+  .logo__sub-title {
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+}
 .logo__sub-title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url(../../assets/logo-bamboo.svg);
+  background-repeat: no-repeat;
+  top: -3px;
+  left: -5px;
+  width: 100%;
+  height: 20.98px;
+}
+@media only screen and (max-width: 999px) {
+  .logo__sub-title::before {
+    height: 13.56px;
+  }
+}
+
+.logo-footer {
+  width: 82px;
+  height: 52px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  padding: 3px 0px 0px 0px;
+}
+.logo-footer__sub-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.logo-footer__sub-title::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -499,6 +636,11 @@ a {
   transition: all 0.4s;
 }
 
+@media only screen and (max-width: 1490px) {
+  .contact {
+    margin-right: 32px;
+  }
+}
 .contact__title {
   font-family: "Roboto";
   font-style: normal;
@@ -523,6 +665,11 @@ a {
   color: #bdbdbd;
   border-radius: 5px;
   margin-right: 5px;
+}
+@media only screen and (max-width: 1490px) {
+  .contact__email {
+    border-radius: 2px;
+  }
 }
 .contact__email:active {
   border: 1px solid #4b9200;

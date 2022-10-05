@@ -10,11 +10,13 @@
   line-height: 120%;
   text-align: center;
   padding: 3px 0px 0px 0px;
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 999px) {
     width: 46.86px;
     height: 29.03px;
     border: none;
     padding: 0px;
+    font-size: 12.2899px;
+    line-height: 120%;
   }
 
   & > h1 {
@@ -23,7 +25,7 @@
     font-weight: 400;
     font-size: 19.0145px;
     line-height: 120%;
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 999px) {
       font-size: 12.2899px;
       line-height: 120%;
     }
@@ -37,7 +39,7 @@
     text-align: center;
     position: relative;
     display: inline-block;
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 999px) {
       font-size: 12.2899px;
       line-height: 120%;
     }
@@ -52,8 +54,43 @@
     left: -5px;
     width: 100%;
     height: 20.98px;
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 999px) {
       height: 13.56px;
     }
+  }
+}
+.logo-footer {
+  width: 82px;
+  height: 52px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  padding: 3px 0px 0px 0px;
+
+  &__sub-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  &__sub-title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-image: url(../../assets/logo-bamboo.svg);
+    background-repeat: no-repeat;
+    top: -3px;
+    left: -5px;
+    width: 100%;
+    height: 20.98px;
   }
 }

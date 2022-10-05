@@ -29,6 +29,10 @@
         top: -55px;
         left: -5px;
       }
+      @media screen and (max-width: 999px) {
+        width: 237.6px;
+        height: 237.6px;
+      }
     }
   }
   &__text {
@@ -45,14 +49,15 @@
     margin-bottom: 60px;
     @media screen and (max-width: 1490px) {
       margin-bottom: 40px;
+      font-size: 85px;
+    }
+    @media screen and (max-width: 999px) {
+      font-size: 54.2894px;
+      line-height: 75%;
     }
 
     & > span {
       color: $color-yellow;
-    }
-
-    @media screen and (max-width: 1490px) {
-      font-size: 85px;
     }
   }
 }
