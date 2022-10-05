@@ -79,6 +79,12 @@ a {
     padding: 58px 0px 100px 0px;
   }
 }
+@media only screen and (max-width: 639px) {
+  .animals-wrapper {
+    background: no-repeat 100% 40px url("./../../assets/flower_foto1-320.png"), no-repeat -3px 100% url("./../../assets/flower_foto2-320.png"), no-repeat 101% 100% url("./../../assets/flower_foto3-320.png"), #ffffff;
+    padding: 105px 0px 60px 0px;
+  }
+}
 
 .header {
   background-color: #000000;
@@ -476,6 +482,11 @@ a {
     margin-bottom: 80px;
   }
 }
+@media only screen and (max-width: 639px) {
+  .backstage {
+    margin-bottom: 38px;
+  }
+}
 .backstage__img {
   width: 609px;
   height: 403px;
@@ -514,6 +525,11 @@ a {
     width: 494px;
   }
 }
+@media only screen and (max-width: 639px) {
+  .backstage__content {
+    width: 100%;
+  }
+}
 .backstage__content > h2 {
   font-size: 48px;
   line-height: 120%;
@@ -525,6 +541,13 @@ a {
     font-weight: 400;
     font-size: 48px;
     line-height: 120%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .backstage__content > h2 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 10px;
   }
 }
 .backstage__content > p {
@@ -547,6 +570,12 @@ a {
   .backstage__content > h3 {
     margin-top: 28px;
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .backstage__content > h3 {
+    margin-top: 18px;
+    margin-bottom: 9px;
   }
 }
 
