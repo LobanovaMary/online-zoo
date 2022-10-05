@@ -2,6 +2,9 @@
   @media only screen and (max-width: 1490px) {
     margin-right: 32px;
   }
+  @media only screen and (max-width: 990px) {
+    display: none;
+  }
   &__title {
     font-family: "Roboto";
     font-style: normal;

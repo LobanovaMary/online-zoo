@@ -110,6 +110,11 @@ a {
   padding: 40px 0px 50px 0px;
   background: #000000;
 }
+@media only screen and (max-width: 999px) {
+  .footer {
+    padding: 12px 0px;
+  }
+}
 
 .btn {
   display: block;
@@ -197,6 +202,12 @@ a {
 @media only screen and (max-width: 1490px) {
   .navigation__footer {
     margin-left: 90px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .navigation__footer {
+    margin-left: 0;
+    gap: 37px;
   }
 }
 .navigation__link {
@@ -1134,6 +1145,12 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 46px;
+  position: relative;
+}
+@media only screen and (max-width: 999px) {
+  .footer__wrapper2 {
+    margin-top: 65px;
+  }
 }
 .footer__design {
   display: flex;
@@ -1159,6 +1176,11 @@ a {
 @media only screen and (max-width: 1490px) {
   .contact {
     margin-right: 32px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contact {
+    display: none;
   }
 }
 .contact__title {
@@ -1227,6 +1249,14 @@ a {
   flex-direction: column;
   gap: 10px;
 }
+@media only screen and (max-width: 999px) {
+  .socials {
+    position: absolute;
+    top: -205px;
+    right: 0px;
+    gap: 20px;
+  }
+}
 .socials__item {
   display: flex;
   gap: 12px;
@@ -1257,6 +1287,11 @@ a {
   font-size: 16px;
   line-height: 140%;
   color: #ffffff;
+}
+@media only screen and (max-width: 999px) {
+  .socials__name {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
