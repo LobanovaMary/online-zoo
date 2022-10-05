@@ -13,7 +13,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 a {
@@ -26,13 +25,12 @@ a {
 }
 @media only screen and (max-width: 1490px) {
   .container {
-    width: 1000px;
+    width: 100%;
     padding: 0px 30px;
   }
 }
 @media only screen and (max-width: 998px) {
   .container {
-    width: 640px;
     padding: 0px 20px;
   }
 }
@@ -61,7 +59,7 @@ a {
 }
 @media only screen and (max-width: 1490px) {
   .animals-wrapper {
-    background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"), no-repeat 102% 100% url("./../../assets/flower_foto3-1000.png"), #ffffff;
+    background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"), no-repeat 100% 100% url("./../../assets/flower_foto3-1000.png"), #ffffff;
     padding: 104px 0px 140px 0px;
   }
 }
@@ -317,10 +315,20 @@ a {
     padding: 42px 37px 47px 0px;
   }
 }
+@media screen and (max-width: 999px) {
+  .watch-animal__container {
+    padding: 50px 14px 40px 20px;
+  }
+}
 .watch-animal__content {
   width: 500px;
   position: relative;
   margin-left: auto;
+}
+@media screen and (max-width: 999px) {
+  .watch-animal__content {
+    width: 100%;
+  }
 }
 .watch-animal__content::after {
   content: "";
@@ -344,6 +352,8 @@ a {
   .watch-animal__content::after {
     width: 237.6px;
     height: 237.6px;
+    top: -40px;
+    left: 330px;
   }
 }
 .watch-animal__text {
@@ -369,10 +379,24 @@ a {
   .watch-animal__text {
     font-size: 54.2894px;
     line-height: 75%;
+    width: 255.64px;
+    margin-bottom: 0px;
+    margin-left: 368px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .watch-animal__text {
+    margin-left: auto;
   }
 }
 .watch-animal__text > span {
   color: #ffee2e;
+}
+@media screen and (max-width: 999px) {
+  .watch-animal__btn {
+    margin-right: auto;
+    margin-left: 0px;
+  }
 }
 
 .backstage {

@@ -7,13 +7,18 @@
     @media screen and (max-width: 1490px) {
       padding: 42px 37px 47px 0px;
     }
+    @media screen and (max-width: 999px) {
+      padding: 50px 14px 40px 20px;
+    }
   }
 
   &__content {
     width: 500px;
     position: relative;
     margin-left: auto;
-
+    @media screen and (max-width: 999px) {
+      width: 100%;
+    }
     &::after {
       content: "";
       width: 465px;
@@ -32,6 +37,8 @@
       @media screen and (max-width: 999px) {
         width: 237.6px;
         height: 237.6px;
+        top: -40px;
+        left: 330px;
       }
     }
   }
@@ -54,10 +61,23 @@
     @media screen and (max-width: 999px) {
       font-size: 54.2894px;
       line-height: 75%;
+      width: 255.64px;
+      margin-bottom: 0px;
+      margin-left: 368px;
+    }
+    @media screen and (max-width: 670px) {
+      margin-left: auto;
     }
 
     & > span {
       color: $color-yellow;
+    }
+  }
+
+  &__btn {
+    @media screen and (max-width: 999px) {
+      margin-right: auto;
+      margin-left: 0px;
     }
   }
 }
