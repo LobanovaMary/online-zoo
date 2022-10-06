@@ -9,6 +9,9 @@
   @media only screen and (max-width: 999px) {
     padding: 30px 32px 40px 20px;
   }
+  @media only screen and (max-width: 639px) {
+    padding: 0px 66px 10px 66px;
+  }
 
   &__title {
     font-weight: 400;
@@ -19,6 +22,9 @@
     @media only screen and (max-width: 999px) {
       margin-bottom: 18px;
       padding-left: 10px;
+    }
+    @media only screen and (max-width: 639px) {
+      font-size: 24px;
     }
   }
 
@@ -32,6 +38,11 @@
       position: relative;
       grid-template-columns: repeat(3, 1fr);
     }
+    @media only screen and (max-width: 639px) {
+      grid-template-columns: 168px;
+      grid-template-rows: repeat(6, 168px, 44px);
+      gap: 10px;
+    }
   }
   &__container > p {
     font-family: "Roboto";
@@ -41,6 +52,9 @@
     line-height: 140%;
     color: $color-grey;
     width: 168px;
+    @media only screen and (max-width: 639px) {
+      margin-bottom: 28px;
+    }
   }
 
   &__icon {
@@ -60,11 +74,18 @@
     @media only screen and (max-width: 999px) {
       grid-column: 1 / 2;
     }
+    @media only screen and (max-width: 639px) {
+      grid-row: 2/3;
+    }
   }
   &__zoo-descripton {
     grid-column: 3 / 5;
     @media only screen and (max-width: 999px) {
       grid-column: 2 / 3;
+    }
+    @media only screen and (max-width: 639px) {
+      grid-column: 1 / 2;
+      grid-row: 4/5;
     }
   }
 
@@ -84,6 +105,18 @@
       }
       &-second {
         left: 345px;
+      }
+    }
+    @media only screen and (max-width: 639px) {
+      background-image: url(./../../assets/arrow-320.png);
+      width: 63.12px;
+      height: 100.66px;
+      left: 173px;
+      &-first {
+        top: 167px;
+      }
+      &-second {
+        top: 417px;
       }
     }
   }
