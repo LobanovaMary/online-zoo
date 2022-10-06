@@ -13,6 +13,10 @@
   @media only screen and (max-width: 1490px) {
     margin-left: 18px;
   }
+  @media only screen and (max-width: 998px) {
+    margin-left: 5px;
+    margin-bottom: 7px;
+  }
 
   &__form {
     display: flex;
@@ -35,6 +39,11 @@
       width: 810px;
       margin-left: 18px;
     }
+    @media only screen and (max-width: 998px) {
+      width: 600px;
+      margin-left: 0px;
+      padding: 0px 25px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -45,6 +54,10 @@
       @media only screen and (max-width: 1490px) {
         width: 785px;
         left: 10px;
+      }
+      @media only screen and (max-width: 998px) {
+        width: 524px;
+        left: 35px;
       }
     }
   }
@@ -157,7 +170,10 @@
       -webkit-appearance: none;
       margin: 0;
     }
-
+    @media only screen and (max-width: 998px) {
+      width: 180px;
+      height: 42px;
+    }
     &[type="number"] {
       -moz-appearance: textfield;
     }
@@ -165,6 +181,9 @@
   &__input-wrapper {
     position: relative;
     margin-bottom: 25px;
+    @media only screen and (max-width: 998px) {
+      margin-bottom: 30px;
+    }
   }
   &__input-wrapper::after {
     content: "";
@@ -174,6 +193,9 @@
     background: no-repeat center url(../../assets/dollar-icon.svg);
     width: 30px;
     height: 30px;
+    @media only screen and (max-width: 998px) {
+      top: 8px;
+    }
   }
 
   &__text {
@@ -228,6 +250,15 @@
   }
   @media only screen and (max-width: 1490px) {
     &__count-5000 {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 998px) {
+    &__count-2000 {
+      display: none;
+    }
+
+    &__count-1000 {
       display: none;
     }
   }
