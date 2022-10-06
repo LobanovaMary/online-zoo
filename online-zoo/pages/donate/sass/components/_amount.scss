@@ -10,6 +10,9 @@
   position: relative;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 1490px) {
+    margin-left: 18px;
+  }
 
   &__form {
     display: flex;
@@ -25,9 +28,13 @@
     display: flex;
     align-items: center;
     position: relative;
-
     gap: 105px;
     padding: 0px 20px;
+    @media only screen and (max-width: 1490px) {
+      padding: 0px 1px;
+      width: 810px;
+      margin-left: 18px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -35,6 +42,10 @@
       width: 915px;
       height: 2px;
       left: 30px;
+      @media only screen and (max-width: 1490px) {
+        width: 785px;
+        left: 10px;
+      }
     }
   }
 
@@ -62,6 +73,10 @@
         border-radius: 100%;
         top: -38px;
         left: 21px;
+        @media only screen and (max-width: 1490px) {
+          top: -37px;
+          left: 2px;
+        }
       }
       & > label {
         position: absolute;
@@ -75,6 +90,9 @@
         color: #333b41;
         line-height: 140%;
         transition: all 0.2s;
+        @media only screen and (max-width: 1490px) {
+          left: -0px;
+        }
       }
     }
     &-radio {
@@ -99,6 +117,10 @@
       top: -47px;
       left: 12px;
       border-radius: 100%;
+      @media only screen and (max-width: 1490px) {
+        top: -46px;
+        left: -7px;
+      }
     }
     &-radio:checked ~ label::before {
       content: "";
@@ -109,6 +131,10 @@
       border-radius: 100%;
       top: -38px;
       left: 21px;
+      @media only screen and (max-width: 1490px) {
+        top: -37px;
+        left: 2px;
+      }
     }
   }
 
@@ -198,6 +224,11 @@
     &-radio:checked {
       background: #4b9200;
       border: 1px solid #4b9200;
+    }
+  }
+  @media only screen and (max-width: 1490px) {
+    &__count-5000 {
+      display: none;
     }
   }
 }
