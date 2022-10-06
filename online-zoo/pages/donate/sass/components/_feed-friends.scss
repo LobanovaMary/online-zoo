@@ -6,6 +6,9 @@
   @media only screen and (max-width: 998px) {
     height: 335px;
   }
+  @media only screen and (max-width: 639px) {
+    height: 187px;
+  }
 }
 
 .feed-friends {
@@ -17,6 +20,9 @@
     }
     @media only screen and (max-width: 998px) {
       padding: 30px 20px 46px 20px;
+    }
+    @media only screen and (max-width: 639px) {
+      padding: 30px 10px 18px 10px;
     }
   }
 
@@ -38,6 +44,9 @@
       font-size: 24px;
       margin-bottom: 15px;
     }
+    @media only screen and (max-width: 639px) {
+      width: 300px;
+    }
   }
   &__content {
     font-family: "Roboto";
@@ -49,6 +58,9 @@
     margin-bottom: 45px;
     @media only screen and (max-width: 998px) {
       margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 639px) {
+      margin-bottom: 25px;
     }
   }
 
@@ -65,6 +77,9 @@
     }
     @media only screen and (max-width: 998px) {
       margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 639px) {
+      font-size: 24px;
     }
   }
 }
