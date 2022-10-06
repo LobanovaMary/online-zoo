@@ -600,6 +600,12 @@ a {
     width: 600px;
   }
 }
+@media only screen and (max-width: 639px) {
+  .slider {
+    height: 1388px;
+    margin-bottom: 20px;
+  }
+}
 .slider__animals {
   height: 100%;
   overflow: hidden;
@@ -620,6 +626,14 @@ a {
     grid-template-columns: repeat(4, 285px);
     row-gap: 135px;
     padding-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .slider__animals {
+    grid-template-columns: 285px;
+    grid-template-rows: repeat(4, 332);
+    row-gap: 66px;
+    height: 1388px;
   }
 }
 .slider__card {
@@ -767,6 +781,11 @@ a {
 @media screen and (max-width: 999px) {
   .slider__controls > button {
     top: 343px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .slider__controls > button {
+    display: none;
   }
 }
 .slider__controls > button:hover {

@@ -14,6 +14,10 @@
     margin-bottom: 60px;
     width: 600px;
   }
+  @media only screen and (max-width: 639px) {
+    height: 1388px;
+    margin-bottom: 20px;
+  }
 
   &__animals {
     height: 100%;
@@ -31,6 +35,12 @@
       grid-template-columns: repeat(4, 285px);
       row-gap: 135px;
       padding-bottom: 60px;
+    }
+    @media only screen and (max-width: 639px) {
+      grid-template-columns: 285px;
+      grid-template-rows: repeat(4, 332);
+      row-gap: 66px;
+      height: 1388px;
     }
   }
 
@@ -167,6 +177,9 @@
     }
     @media screen and (max-width: 999px) {
       top: 343px;
+    }
+    @media only screen and (max-width: 639px) {
+      display: none;
     }
 
     &:hover {
