@@ -8,7 +8,10 @@
       padding: 42px 37px 47px 0px;
     }
     @media screen and (max-width: 999px) {
-      padding: 73px 14px 40px 20px;
+      padding: 79px 16px 42px 25px;
+    }
+    @media only screen and (max-width: 639px) {
+      padding: 73px 13px 48px 19px;
     }
   }
 
@@ -67,8 +70,8 @@
     @media screen and (max-width: 999px) {
       font-size: 54.2894px;
       width: 255.64px;
-      margin-bottom: 0px;
       margin-left: 368px;
+      margin-bottom: -7px;
     }
     @media screen and (max-width: 670px) {
       margin-left: auto;

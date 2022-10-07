@@ -379,12 +379,12 @@ a {
 }
 @media only screen and (max-width: 998px) {
   .panda-bg {
-    height: 335px;
+    height: 369px;
   }
 }
 @media only screen and (max-width: 639px) {
   .panda-bg {
-    height: 217px;
+    height: 215px;
   }
 }
 
