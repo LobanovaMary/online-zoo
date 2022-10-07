@@ -546,6 +546,14 @@ a {
   }
 }
 
+@media only screen and (max-width: 998px) {
+  .donation__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .diet-container {
   height: 246px;
   display: flex;
@@ -581,6 +589,7 @@ a {
   .diet__count {
     gap: 6px;
     margin-top: 32px;
+    width: 100%;
   }
 }
 .diet__count-num {
@@ -662,6 +671,7 @@ a {
   .amount {
     margin-left: 5px;
     margin-bottom: 7px;
+    align-self: flex-start;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -979,6 +989,12 @@ a {
   }
   .amount__count-1000 {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  label.last-label {
+    width: 100%;
   }
 }
 

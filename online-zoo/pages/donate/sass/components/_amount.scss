@@ -16,6 +16,7 @@
   @media only screen and (max-width: 998px) {
     margin-left: 5px;
     margin-bottom: 7px;
+    align-self: flex-start;
   }
   @media only screen and (max-width: 639px) {
     margin-left: 1px;
@@ -307,5 +308,10 @@
     &__count-1000 {
       display: none;
     }
+  }
+}
+label.last-label {
+  @media only screen and (max-width: 998px) {
+    width: 100%;
   }
 }
