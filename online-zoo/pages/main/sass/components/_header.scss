@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   &__design {
     display: inline-block;
     color: $color-white;
@@ -14,6 +14,10 @@
   }
   &__design:hover {
     color: $color-title-orange;
+  }
+  @media only screen and (max-width: 998px) {
+    position: fixed;
+    width: 100%;
   }
 }
 .burger {

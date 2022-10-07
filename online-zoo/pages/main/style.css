@@ -170,7 +170,7 @@ a {
 
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 .header__design {
   display: inline-block;
@@ -185,6 +185,12 @@ a {
 }
 .header__design:hover {
   color: #fe9013;
+}
+@media only screen and (max-width: 998px) {
+  .header {
+    position: fixed;
+    width: 100%;
+  }
 }
 
 .burger {
