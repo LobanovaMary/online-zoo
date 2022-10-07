@@ -253,6 +253,9 @@
     line-height: 140%;
     color: #333b41;
     margin-top: 30px;
+    @media only screen and (max-width: 639px) {
+      font-size: 15.9px;
+    }
   }
 
   &__time {
