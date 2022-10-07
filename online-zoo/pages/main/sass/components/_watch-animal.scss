@@ -74,6 +74,12 @@
       margin-left: auto;
     }
     @media only screen and (max-width: 639px) {
+      margin-left: 180px;
+      font-size: 28px;
+      width: 128.13px;
+    }
+    @media only screen and (max-width: 360px) {
+      margin-left: auto;
       font-size: 28px;
       width: 128.13px;
     }

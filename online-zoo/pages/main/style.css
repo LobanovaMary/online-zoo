@@ -134,7 +134,7 @@ a {
 }
 @media only screen and (max-width: 999px) {
   .footer {
-    padding: 12px 0px;
+    padding: 15px 0px;
   }
 }
 
@@ -252,11 +252,6 @@ a {
 }
 .navigation__link:hover {
   color: #fe9013;
-}
-@media only screen and (max-width: 1490px) {
-  .navigation__footer--donate {
-    margin-left: 114px;
-  }
 }
 
 .logo {
@@ -465,6 +460,14 @@ a {
 }
 @media only screen and (max-width: 639px) {
   .watch-animal__text {
+    margin-left: 180px;
+    font-size: 28px;
+    width: 128.13px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .watch-animal__text {
+    margin-left: auto;
     font-size: 28px;
     width: 128.13px;
   }
@@ -631,6 +634,9 @@ a {
     height: 1388px;
     margin-bottom: 20px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .slider__animals {
@@ -1005,6 +1011,9 @@ a {
 @media only screen and (max-width: 639px) {
   .payment {
     padding: 0px 66px 10px 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .payment__title {
@@ -1133,6 +1142,13 @@ a {
   }
 }
 
+@media only screen and (max-width: 639px) {
+  .testimonials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .testimonials__title {
   font-family: "Roboto";
   font-style: normal;
@@ -1169,7 +1185,7 @@ a {
 }
 @media only screen and (max-width: 639px) {
   .testimonials__slider {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 }
 .testimonials__slider-content {
@@ -1345,7 +1361,7 @@ a {
 }
 @media only screen and (max-width: 639px) {
   .testimonials__btn {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 }
 
