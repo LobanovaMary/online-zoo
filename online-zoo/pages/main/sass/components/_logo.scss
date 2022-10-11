@@ -17,6 +17,14 @@
     padding: 0px;
     font-size: 12.2899px;
     line-height: 120%;
+    &--open {
+      margin-top: 5px;
+      width: 57.99px;
+      height: 35.93px;
+      padding: 3px 0px 0px 0px;
+      border: 1px solid $color-title-orange;
+      color: $color-title-orange;
+    }
   }
 
   & > h1 {
@@ -57,6 +65,9 @@
     @media only screen and (max-width: 999px) {
       height: 13.56px;
     }
+  }
+  &__sub-title--open::before {
+    background-image: url(../../assets/bamboo-orng-icon.svg);
   }
 }
 .logo-footer {

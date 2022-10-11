@@ -7,19 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>Online-zoo</title>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="container header__container">
 
-      <a href="./index.html" class="logo">
+      <a href="./index.html" class="logo ">
         <h1>PetStory
-          <span class="logo__sub-title">online</span>
+          <span class="logo__sub-title ">online</span>
         </h1>
       </a>
-      <nav class="header__hidden">
+      <nav class="header__hidden ">
         <ul class="navigation">
           <li>
             <a class="navigation__link navigation__link--active" href="#">About</a>
@@ -30,10 +30,13 @@
           <li><a class="navigation__link" href="#">Contact us</a></li>
         </ul>
       </nav>
-      <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="header__design header__hidden">
+      <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+        class="header__design header__hidden  ">
         <span>Designed by &copy;</span>
       </a>
-      <div class="burger"></div>
+      <div class="burger">
+        <div class="burger__line"></div>
+      </div>
     </div>
   </header>
   <main>
@@ -406,6 +409,7 @@
       </div>
     </div>
   </footer>
+  <div class="overlay overlay--hidden"></div>
 </body>
 
 </html>

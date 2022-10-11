@@ -19,6 +19,20 @@ a {
   text-decoration: none;
 }
 
+.overlay {
+  z-index: 6;
+  position: absolute;
+  width: 100%;
+  height: 1000%;
+  top: 0;
+  left: 0;
+  background: rgba(41, 41, 41, 0.6);
+  overflow: auto;
+}
+.overlay--hidden {
+  display: none;
+}
+
 .container {
   width: 1160px;
   margin: auto;
@@ -183,6 +197,13 @@ a {
   margin-left: auto;
   transition: all 0.4s;
 }
+@media only screen and (max-width: 999px) {
+  .header__design {
+    color: #333b41;
+    font-weight: 400;
+    margin-left: 0;
+  }
+}
 .header__design:hover {
   color: #fe9013;
 }
@@ -190,6 +211,19 @@ a {
   .header {
     position: fixed;
     width: 100%;
+  }
+  .header--open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 329px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
   }
 }
 
@@ -201,7 +235,68 @@ a {
     display: block;
     width: 18px;
     height: 10px;
-    background-image: url(./../../assets/burger-icon.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .burger--open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .burger__line {
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: #ffffff;
+    position: relative;
+  }
+  .burger__line::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+  }
+  .burger__line::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: #ffffff;
+    position: absolute;
+    top: -6px;
+    left: 0;
+  }
+  .burger__line--open {
+    background: inherit;
+    padding: 5px;
+  }
+  .burger__line--open::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    transform: rotate(135deg);
+  }
+  .burger__line--open::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+    position: absolute;
+    top: 4px;
+    left: 0;
+    transform: rotate(45deg);
   }
 }
 .burger:hover {
@@ -211,6 +306,9 @@ a {
 @media only screen and (max-width: 999px) {
   .header__hidden {
     display: none;
+  }
+  .header__hidden--open {
+    display: block;
   }
 }
 
@@ -222,6 +320,12 @@ a {
 @media only screen and (max-width: 1490px) {
   .navigation {
     gap: 48px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .navigation {
+    flex-direction: column;
+    gap: 15px;
   }
 }
 .navigation__footer {
@@ -259,6 +363,11 @@ a {
 .navigation__link:hover {
   color: #fe9013;
 }
+@media only screen and (max-width: 999px) {
+  .navigation__link {
+    color: #333b41;
+  }
+}
 
 .logo {
   width: 82px;
@@ -281,6 +390,14 @@ a {
     padding: 0px;
     font-size: 12.2899px;
     line-height: 120%;
+  }
+  .logo--open {
+    margin-top: 5px;
+    width: 57.99px;
+    height: 35.93px;
+    padding: 3px 0px 0px 0px;
+    border: 1px solid #fe9013;
+    color: #fe9013;
   }
 }
 .logo > h1 {
@@ -327,6 +444,9 @@ a {
   .logo__sub-title::before {
     height: 13.56px;
   }
+}
+.logo__sub-title--open::before {
+  background-image: url(../../assets/bamboo-orng-icon.svg);
 }
 
 .logo-footer {
