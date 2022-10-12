@@ -1005,7 +1005,7 @@ a {
   outline: none;
   background-color: inherit;
   border: 1px solid #929699;
-  color: #929699;
+  color: #333b41;
   border-radius: 2px;
   padding: 16px 10px;
   font-family: "Roboto";
@@ -1013,6 +1013,9 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+}
+.amount__input::-webkit-input-placeholder, .amount__input::-moz-placeholder {
+  color: #929699;
 }
 .amount__input::-webkit-outer-spin-button, .amount__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
