@@ -23,7 +23,7 @@ a {
   z-index: 6;
   position: absolute;
   width: 100%;
-  height: 1000%;
+  height: 1200%;
   top: 0;
   left: 0;
   background: rgba(41, 41, 41, 0.6);
@@ -1376,6 +1376,9 @@ a {
   }
 }
 
+.testimonials {
+  position: relative;
+}
 @media only screen and (max-width: 639px) {
   .testimonials__container {
     display: flex;
@@ -1436,7 +1439,7 @@ a {
   grid-template-columns: repeat(11, 264px);
   gap: 30px;
   margin-bottom: 20px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 @media screen and (max-width: 1490px) {
   .testimonials__slider-content {
@@ -1500,7 +1503,25 @@ a {
   cursor: pointer;
   width: 270px;
   height: 393px;
-  box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.28);
+  box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.28);
+}
+@media screen and (max-width: 1490px) {
+  .testimonials__slider-item-wrapper:hover {
+    width: 295px;
+    height: 393px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .testimonials__slider-item-wrapper:hover {
+    height: 100%;
+    width: 602px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .testimonials__slider-item-wrapper:hover {
+    height: 111px;
+    width: 301px;
+  }
 }
 @media screen and (max-width: 1490px) {
   .testimonials__slider-item-wrapper {
@@ -1519,6 +1540,16 @@ a {
     height: 109px;
     width: 299px;
   }
+}
+.testimonials__slider-item--open {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.testimonials__slider-item--open > .testimonials__slider-item {
+  height: 100%;
+  overflow: visible;
 }
 .testimonials__slider-title {
   display: flex;
@@ -1608,6 +1639,80 @@ a {
   .testimonials__btn {
     margin-left: 0px;
   }
+}
+
+.pop-up {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 33%;
+}
+@media only screen and (max-width: 639px) {
+  .pop-up {
+    left: 20px;
+  }
+}
+.pop-up--open {
+  display: block;
+  z-index: 8;
+}
+.pop-up > .testimonials__slider-item-wrapper {
+  width: 264px;
+  height: calc(100% + 4px);
+  overflow: visible;
+}
+.pop-up > .testimonials__slider-item-wrapper > .testimonials__slider-item {
+  display: block;
+  overflow: visible;
+  width: 260px;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  width: 18px;
+  height: 10px;
+  top: -10px;
+  right: -20px;
+}
+.close:hover {
+  cursor: pointer;
+}
+.close::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  transform: rotate(135deg);
+}
+.close::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
+  position: absolute;
+  top: 4px;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.overlay-popup {
+  z-index: 6;
+  position: absolute;
+  width: 100%;
+  height: 1155%;
+  top: 0;
+  left: 0;
+  background: rgba(41, 41, 41, 0.6);
+  overflow: auto;
+}
+.overlay-popup--hidden {
+  display: none;
 }
 
 .footer__wrapper {
