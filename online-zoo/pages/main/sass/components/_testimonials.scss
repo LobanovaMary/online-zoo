@@ -8,7 +8,7 @@
     }
   }
   &__title {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -42,8 +42,10 @@
     @media only screen and (max-width: 639px) {
       width: 100%;
       margin-bottom: 5px;
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
+      display: flex;
+      justify-content: center;
     }
 
     &-content {
@@ -85,7 +87,7 @@
       }
 
       & > p {
-        font-family: "Roboto";
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
@@ -158,14 +160,14 @@
     }
     &-name {
       & > h4 {
-        font-family: "Roboto";
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
       }
       & > p {
-        font-family: "Roboto";
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
@@ -181,7 +183,7 @@
       background: $color-white;
       overflow: hidden;
 
-      &[type="range"] {
+      &[type='range'] {
         -webkit-appearance: none;
       }
       @media screen and (max-width: 1490px) {
@@ -208,7 +210,7 @@
         }
       }
 
-      &[type="range"]::-webkit-slider-thumb {
+      &[type='range']::-webkit-slider-thumb {
         -webkit-appearance: none;
         width: 74px;
         height: 7px;
@@ -272,7 +274,7 @@
     cursor: pointer;
   }
   &::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 100%;
     border-radius: 2px;
@@ -283,7 +285,7 @@
     transform: rotate(135deg);
   }
   &::before {
-    content: "";
+    content: '';
     height: 2px;
     width: 100%;
     border-radius: 2px;
