@@ -1,0 +1,97 @@
+.container {
+  width: 1160px;
+  margin: auto;
+  @media only screen and (max-width: 1490px) {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  @media only screen and (max-width: 998px) {
+    padding: 0px 20px;
+  }
+  @media only screen and (max-width: 639px) {
+    padding: 0px 10px;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 63px;
+  padding: 15px 0px;
+  @media only screen and (max-width: 1490px) {
+    padding: 15px 30px;
+  }
+  @media only screen and (max-width: 998px) {
+    padding: 2px 20px;
+  }
+  @media only screen and (max-width: 639px) {
+    padding: 0px 10px;
+  }
+}
+.animals-wrapper {
+  background: no-repeat 101% 12px url("./../../assets/flower_foto1.png"),
+    no-repeat -3px 100% url("./../../assets/flower_foto2.png"),
+    no-repeat 101% 100% url("./../../assets/flower_foto3.png"), $color-white;
+  padding: 140px 0px 100px 0px;
+  @media only screen and (max-width: 1490px) {
+    background: no-repeat 0px 100% url("./../../assets/flower_foto2-1000.png"),
+      no-repeat 100% 100% url("./../../assets/flower_foto3-1000.png"),
+      $color-white;
+    padding: 104px 0px 140px 0px;
+  }
+  @media only screen and (max-width: 999px) {
+    background: no-repeat 100% 0px url("./../../assets/flower_foto1-640.png"),
+      no-repeat -3px 100% url("./../../assets/flower_foto2-640.png"),
+      no-repeat 101% 100% url("./../../assets/flower_foto3-640.png"),
+      $color-white;
+    padding: 58px 0px 100px 0px;
+  }
+  @media only screen and (max-width: 639px) {
+    background: no-repeat 100% 40px url("./../../assets/flower_foto1-320.png"),
+      no-repeat -3px 100% url("./../../assets/flower_foto2-320.png"),
+      no-repeat 101% 100% url("./../../assets/flower_foto3-320.png"),
+      $color-white;
+    padding: 105px 0px 60px 0px;
+  }
+}
+.header {
+  background-color: $color-dark;
+}
+
+.donate {
+  padding: 70px 0px 100px 0px;
+  background: $color-orange-grad;
+  @media only screen and (max-width: 1490px) {
+    padding: 30px 0px 50px 0px;
+  }
+  @media only screen and (max-width: 999px) {
+    padding: 20px 0px 20px 0px;
+  }
+}
+.testimonials {
+  padding: 140px 0px 180px 0px;
+  background: no-repeat 101% 644px url("./../../assets/flower_foto4.png"),
+    $color-white;
+  @media only screen and (max-width: 1490px) {
+    padding: 100px 0px 140px 0px;
+    background: no-repeat 100% 605px url("./../../assets/flower_foto4-1000.png"),
+      $color-white;
+  }
+  @media only screen and (max-width: 999px) {
+    padding: 60px 0px 80px 0px;
+    background: no-repeat 100% 533px url("./../../assets/flower_foto4-640.png"),
+      $color-white;
+  }
+  @media only screen and (max-width: 639px) {
+    padding: 28px 0px 60px 0px;
+    background: no-repeat 100% 510px url("./../../assets/flower_foto4-320.png"),
+      $color-white;
+  }
+}
+.footer {
+  padding: 40px 0px 50px 0px;
+  background: $color-dark;
+  @media only screen and (max-width: 999px) {
+    padding: 15px 0px;
+  }
+}

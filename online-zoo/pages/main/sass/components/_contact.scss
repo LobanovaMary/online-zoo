@@ -1,0 +1,71 @@
+.contact {
+  @media only screen and (max-width: 1490px) {
+    margin-right: 32px;
+  }
+  @media only screen and (max-width: 990px) {
+    display: none;
+  }
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: $color-white;
+    margin-bottom: 15px;
+  }
+
+  &__email {
+    width: 228px;
+    height: 42px;
+    background-color: inherit;
+    border: 1px solid $color-title-orange;
+    outline: none;
+    padding: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-grey-light2;
+    border-radius: 5px;
+    margin-right: 5px;
+
+    @media only screen and (max-width: 1490px) {
+      border-radius: 2px;
+    }
+    &:active {
+      border: 1px solid $color-green;
+    }
+    &:focus {
+      border: 1px solid $color-green;
+    }
+    &:invalid {
+      color: $color-red;
+      border: 1px solid $color-red;
+    }
+    // &:valid {
+    //   border: 1px solid $color-green;
+    // }
+  }
+  &__email:invalid ~ &__btn-submit {
+    color: $color-red;
+    border: 1px solid $color-red;
+  }
+  &__btn-submit {
+    width: 129px;
+    height: 42px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-green;
+    border: 1px solid $color-green;
+    background: #f1f3f2;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

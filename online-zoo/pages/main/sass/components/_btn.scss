@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  background: $color-orange;
+  font-family: "Roboto";
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  width: 298px;
+  height: 54px;
+  padding: 16px 0px;
+  line-height: 140%;
+  font-weight: 500;
+  font-size: 16px;
+
+  &__circul {
+    border-radius: 25px;
+    margin: auto;
+  }
+
+  &__rectangle {
+    border-radius: 5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: $color-orange-hover;
+  }
+  &:active {
+    background: $color-green;
+  }
+}

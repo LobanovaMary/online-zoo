@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 58px;
+
+  @media only screen and (max-width: 1490px) {
+    gap: 48px;
+  }
+  @media only screen and (max-width: 999px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__link {
+    color: $color-white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    transition: all 0.3s;
+    &--active {
+      cursor: default;
+      color: $color-title-orange;
+    }
+    &:hover {
+      color: $color-title-orange;
+    }
+    @media only screen and (max-width: 999px) {
+      color: #333b41;
+    }
+    &--footer {
+      color: $color-white;
+    }
+  }
+
+  &__footer {
+    margin-left: 120px;
+    @media only screen and (max-width: 1490px) {
+      margin-left: 90px;
+    }
+    @media only screen and (max-width: 999px) {
+      margin-left: 0;
+      gap: 37px;
+      flex-direction: row;
+    }
+    @media only screen and (max-width: 639px) {
+      gap: 30px;
+    }
+  }
+}

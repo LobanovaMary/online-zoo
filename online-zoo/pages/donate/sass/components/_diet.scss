@@ -1,0 +1,79 @@
+.diet {
+  &-container {
+    height: 246px;
+    display: flex;
+    margin: 0px 229px 48px 215px;
+    align-items: center;
+    gap: 10px;
+    @media only screen and (max-width: 1490px) {
+      margin: 0px 212px 48px 150px;
+    }
+    @media only screen and (max-width: 998px) {
+      margin: 0px 41px 41px 27px;
+    }
+    @media only screen and (max-width: 639px) {
+      margin: 0px 0px;
+      height: 144px;
+    }
+  }
+  &__count {
+    margin-top: 60px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+    @media only screen and (max-width: 639px) {
+      gap: 6px;
+      margin-top: 32px;
+      width: 100%;
+    }
+
+    &-num {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 80%;
+      color: $color-dark;
+      @media only screen and (max-width: 639px) {
+        font-weight: 500;
+        font-size: 40.6015px;
+        line-height: 80%;
+      }
+    }
+    &-p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $color-grey;
+      @media only screen and (max-width: 1490px) {
+        width: 160px;
+      }
+      @media only screen and (max-width: 639px) {
+        font-size: 9.02255px;
+        width: 89.66px;
+      }
+    }
+  }
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 30px;
+    margin-right: 54px;
+    @media only screen and (max-width: 639px) {
+      margin-right: 20px;
+      margin-top: 20px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &__img-panda {
+    width: 284px;
+    @media only screen and (max-width: 639px) {
+      width: 160.15px;
+    }
+  }
+}

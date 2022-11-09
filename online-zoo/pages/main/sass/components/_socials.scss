@@ -1,0 +1,52 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media only screen and (max-width: 999px) {
+    position: absolute;
+    top: -205px;
+    right: 0px;
+    gap: 20px;
+  }
+  @media only screen and (max-width: 639px) {
+    flex-direction: row;
+    top: -137px;
+    left: 53px;
+    gap: 30px;
+  }
+  &__item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    transition: all 0.4s;
+  }
+  &__item:hover > div {
+    cursor: pointer;
+    background: #4b9200;
+  }
+  &__item:hover > &__name {
+    cursor: pointer;
+    color: #4b9200;
+  }
+
+  &__icon {
+    width: 26px;
+    height: 26px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-white;
+    @media only screen and (max-width: 999px) {
+      display: none;
+    }
+  }
+}

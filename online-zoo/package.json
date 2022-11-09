@@ -1,0 +1,12 @@
+{
+  "name": "online-zoo-week-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startMain": "sass pages/main/sass/main.scss pages/main/style.css -w",
+    "startDonate": "sass pages/donate/sass/main.scss pages/donate/style.css -w"
+  },
+  "author": "Lobanova Mary",
+  "license": "ISC"
+}

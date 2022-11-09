@@ -1,0 +1,106 @@
+.watch-animal {
+  background-image: url("./../../assets/Giant_Panda.jpg");
+  background-size: cover;
+
+  &__container {
+    padding: 86px 0px 100px 0px;
+    @media screen and (max-width: 1490px) {
+      padding: 42px 37px 47px 0px;
+    }
+    @media screen and (max-width: 999px) {
+      padding: 79px 16px 42px 25px;
+    }
+    @media only screen and (max-width: 639px) {
+      padding: 73px 13px 48px 19px;
+    }
+  }
+
+  &__content {
+    width: 500px;
+    position: relative;
+    margin-left: auto;
+    @media screen and (max-width: 999px) {
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      width: 465px;
+      height: 465px;
+      border-radius: 100%;
+      background: $color-orange;
+      position: absolute;
+      top: -75px;
+      left: -75px;
+      @media screen and (max-width: 1490px) {
+        width: 367px;
+        height: 367px;
+        top: -55px;
+        left: -5px;
+      }
+      @media screen and (max-width: 999px) {
+        width: 237.6px;
+        height: 237.6px;
+        top: -30px;
+        left: 310px;
+      }
+      @media only screen and (max-width: 639px) {
+        width: 119.09px;
+        height: 119.09px;
+        top: -20px;
+        left: 140px;
+      }
+    }
+  }
+  &__text {
+    position: relative;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    z-index: 2;
+    margin-bottom: 60px;
+    @media screen and (max-width: 1490px) {
+      margin-bottom: 40px;
+      font-size: 85px;
+    }
+    @media screen and (max-width: 999px) {
+      font-size: 54.2894px;
+      width: 255.64px;
+      margin-left: 368px;
+      margin-bottom: -7px;
+    }
+    @media screen and (max-width: 670px) {
+      margin-left: auto;
+    }
+    @media only screen and (max-width: 639px) {
+      margin-left: 180px;
+      font-size: 28px;
+      width: 128.13px;
+    }
+    @media only screen and (max-width: 360px) {
+      margin-left: auto;
+      font-size: 28px;
+      width: 128.13px;
+    }
+
+    & > span {
+      color: $color-yellow;
+    }
+  }
+
+  &__btn {
+    @media screen and (max-width: 999px) {
+      margin-right: auto;
+      margin-left: 0px;
+    }
+    @media only screen and (max-width: 639px) {
+      position: absolute;
+      left: -10px;
+      top: 165px;
+    }
+  }
+}
